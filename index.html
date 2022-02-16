@@ -17,6 +17,8 @@
                     colors: {
                         clifford: '#da373d',
                         titleColor: '#31A5AC',
+                        mainColor: '#F8F8F8',
+                        inputbg: '#DCDCDC',
                     }
                 }
             }
@@ -25,11 +27,56 @@
 </head>
 
 <body>
-    <div class="flex mx-auto items-center justify-center lg:space-x-2">
+    <!-- title section -->
+    <div class="flex mx-auto items-center justify-center lg:space-x-2 mb-5">
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-10 lg:mt-12 title-text text-titleColor">
             Financial Affairs</h1>
         <img class="mt-10 w-10 md:w-12 lg:w-16" src="images/dollar_1-removebg.png" alt="">
     </div>
+    <!-- error messages -->
+    <h1 class="text-2xl font font-medium text-center text-red-600 hidden">!!! Please enter Number Type Values !!!</h1>
+    <h1 class="text-2xl font font-medium text-center text-red-600 hidden">!!! Please enter Positive Values !!!</h1>
+    <h1 class="text-2xl font font-medium text-center text-red-600 hidden">!!! The amount you're trying to save is higher
+        than your current balance. SAVE LESS !!!</h1>
+    <h1 class="text-2xl font font-medium text-center text-red-600 hidden">!!! Your expenses are too much as per your
+        income. YOU'RE NOT THAT RICH !!!</h1>
+    <!-- main section -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-14 mt-14 mb-14 mx-6 md:mx-14">
+        <div class="grid grid-row-8">
+            <img class="image sm:w-auto lg:w-auto " src="images/finance.jpg" alt="">
+        </div>
+        <div class="bg-gray-200 text-center ">
+            <h2 class="font font-medium text-xl pt-10 pb-5">Income</h2>
+            <div class="flex items-center justify-center space-x-3 pb-5">
+                <h2 class="font font-normal text-lg">Income:</h2>
+                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" name="" id="" value="10000">
+            </div>
+            <h2 class="font font-medium text-xl pb-5">Expenses</h2>
+            <div class="flex items-center justify-center space-x-3 pb-3 ml-5">
+                <h2 class="font font-normal">Food:</h2>
+                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" name="" id="" value="3000">
+            </div>
+            <div class="flex items-center justify-center space-x-3 pb-3 ml-6">
+                <h2 class="font font-normal">Rent:</h2>
+                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" name="" id="" value="2000">
+            </div>
+            <div class="flex items-center justify-center space-x-3 pb-5">
+                <h2 class="font font-normal">Clothes:</h2>
+                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" name="" id="" value="500">
+            </div>
+            <button class="font font-bold text-lg text-white bg-blue-500 py-2 px-6 rounded mb-4">Calculate</button>
+            <h2 class="font font-medium text-xl mb-4">Total Expenses: <span>5500</span></h2>
+            <h2 class="font font-medium text-xl mb-5">Balance: <span>4500</span></h2>
+            <div class="flex items-center justify-center space-x-3 mb-5">
+                <h2 class="font font-normal">Save:</h2>
+                <input class="bg-inputbg rounded-sm h-10 font-normal font text-center w-28" type="text" value="20">
+                <h2 class="font font-normal">%</h2>
+                <button class="font font-bold text-lg text-white bg-blue-500 py-1 px-6 rounded">Save</button>
+            </div>
+            <h2 class="font font-medium text-xl mb-3">Saving Amount: <span>2000</span></h2>
+            <h2 class="font font-medium text-xl mb-5">Remaining Balance: <span>2500</span></h2>
+        </div>
+    </section>
 </body>
 
 </html>
