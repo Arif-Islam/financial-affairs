@@ -6,10 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Affairs</title>
+    <!-- css file link up -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        titleColor: '#31A5AC',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-
+    <div class="flex mx-auto items-center justify-center lg:space-x-2">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-10 lg:mt-12 title-text text-titleColor">
+            Financial Affairs</h1>
+        <img class="mt-10 w-10 md:w-12 lg:w-16" src="images/dollar_1-removebg.png" alt="">
+    </div>
 </body>
 
 </html>
