@@ -33,19 +33,28 @@
             Financial Affairs</h1>
         <img class="mt-10 w-10 md:w-12 lg:w-16" src="images/dollar_1-removebg.png" alt="">
     </div>
-    <!-- error messages -->
-    <h1 class="text-2xl font font-medium text-center text-red-600 hidden">!!! Please enter Number Type Values !!!</h1>
-    <h1 class="text-2xl font font-medium text-center text-red-600 hidden">!!! Please enter Positive Values !!!</h1>
-    <h1 class="text-2xl font font-medium text-center text-red-600 hidden">!!! The amount you're trying to save is higher
-        than your current balance. SAVE LESS !!!</h1>
-    <h1 class="text-2xl font font-medium text-center text-red-600 hidden">!!! Your expenses are too much as per your
-        income. YOU'RE NOT THAT RICH !!!</h1>
+
     <!-- main section -->
     <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 2xl:gap-0 mt-14 mb-14 mx-6 md:mx-14">
         <div class="flex flex-wrap justify-center">
             <img src="images/main image.png" alt="">
         </div>
         <div class="bg-gray-200 text-center">
+            <!-- error messages -->
+            <h1 id="number-error-text" class="text-2xl font font-medium text-center text-red-600 hidden">!!! Please
+                enter Number
+                Type Values !!!</h1>
+            <h1 id="negative-val-error" class="text-2xl font font-medium text-center text-red-600 hidden">!!! Please
+                enter
+                Positive Values !!!</h1>
+            <h1 id="save-less" class="text-2xl font font-medium text-center text-red-600 hidden">!!! The amount you're
+                trying to
+                save is higher
+                than your current balance. SAVE LESS !!!</h1>
+            <h1 id="expense-income" class="text-2xl font font-medium text-center text-red-600 hidden">!!! Your expenses
+                are too
+                much as per your
+                income. YOU'RE POOR, SPEND LESS !!!</h1>
             <h2 class="font font-medium text-xl pt-10 pb-5">Income</h2>
             <div class="flex items-center justify-center space-x-3 pb-5">
                 <h2 class="font font-normal text-lg">Income:</h2>
