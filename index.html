@@ -41,7 +41,7 @@
     <h1 class="text-2xl font font-medium text-center text-red-600 hidden">!!! Your expenses are too much as per your
         income. YOU'RE NOT THAT RICH !!!</h1>
     <!-- main section -->
-    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-14 mb-14 mx-6 md:mx-14">
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 2xl:gap-0 mt-14 mb-14 mx-6 md:mx-14">
         <div class="flex flex-wrap justify-center">
             <img src="images/main image.png" alt="">
         </div>
@@ -49,34 +49,42 @@
             <h2 class="font font-medium text-xl pt-10 pb-5">Income</h2>
             <div class="flex items-center justify-center space-x-3 pb-5">
                 <h2 class="font font-normal text-lg">Income:</h2>
-                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" name="" id="" value="10000">
+                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" id="income-input"
+                    value="10000">
             </div>
             <h2 class="font font-medium text-xl pb-5">Expenses</h2>
             <div class="flex items-center justify-center space-x-3 pb-3 ml-5">
                 <h2 class="font font-normal">Food:</h2>
-                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" name="" id="" value="3000">
+                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" id="food-input" value="3000">
             </div>
             <div class="flex items-center justify-center space-x-3 pb-3 ml-6">
                 <h2 class="font font-normal">Rent:</h2>
-                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" name="" id="" value="2000">
+                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" id="rent-input" value="2000">
             </div>
             <div class="flex items-center justify-center space-x-3 pb-5">
                 <h2 class="font font-normal">Clothes:</h2>
-                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" name="" id="" value="500">
+                <input class="bg-inputbg rounded-sm h-10 font-normal font p-4" type="text" id="clothes-input"
+                    value="500">
             </div>
-            <button class="font font-bold text-lg text-white bg-blue-500 py-2 px-6 rounded mb-4">Calculate</button>
-            <h2 class="font font-medium text-xl mb-4">Total Expenses: <span>5500</span></h2>
-            <h2 class="font font-medium text-xl mb-5">Balance: <span>4500</span></h2>
+            <button id="calc-btn"
+                class="font font-bold text-lg text-white bg-blue-500 py-2 px-6 rounded mb-4">Calculate</button>
+            <h2 class="font font-medium text-xl mb-4">Total Expenses: <span id="total-expenses">5500</span></h2>
+            <h2 class="font font-medium text-xl mb-5">Balance: <span id="balance">4500</span></h2>
             <div class="flex items-center justify-center space-x-3 mb-5">
                 <h2 class="font font-normal">Save:</h2>
-                <input class="bg-inputbg rounded-sm h-10 font-normal font text-center w-28" type="text" value="20">
+                <input id="save-input" class="bg-inputbg rounded-sm h-10 font-normal font text-center w-28" type="text"
+                    value="20">
                 <h2 class="font font-normal">%</h2>
-                <button class="font font-bold text-lg text-white bg-blue-500 py-1 px-6 rounded">Save</button>
+                <button id="save-btn"
+                    class="font font-bold text-lg text-white bg-blue-500 py-1 px-6 rounded">Save</button>
             </div>
-            <h2 class="font font-medium text-xl mb-3">Saving Amount: <span>2000</span></h2>
-            <h2 class="font font-medium text-xl mb-5">Remaining Balance: <span>2500</span></h2>
+            <h2 class="font font-medium text-xl mb-3">Saving Amount: <span id="saving-amount">2000</span></h2>
+            <h2 class="font font-medium text-xl mb-5">Remaining Balance: <span id="remaining-balance">2500</span></h2>
         </div>
     </section>
+
+    <!-- js file link up -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
